@@ -246,32 +246,31 @@ h2 {
 .contact-links a {
   color: #fff;
   text-decoration: none;
-  transition: color 0.2s;
   display: flex;
   align-items: center;
   position: relative;
   z-index: 1;
   border-radius: 50%;
-  transition: background 0.18s;
 }
 
 .contact-links a:hover {
-  color: var(--accent-light);
-  text-decoration: underline;
-  background: rgba(191,160,116,0.10);
+  color: #fff;
+  text-decoration: none;
+  background: none;
 }
 
 .contact-links .icon {
   width: 28px;
   height: 28px;
   filter: none;
-  transition: filter 0.2s;
+  transition: filter 0.2s, transform 0.2s;
   margin-right: 0.2rem;
   color: #747882;
 }
 
 .contact-links a:hover .icon {
-  filter: invert(0.7) brightness(1.5);
+  filter: brightness(2) drop-shadow(0 0 4px #bfa074);
+  transform: scale(1.18);
 }
 
 .lang-switch {
