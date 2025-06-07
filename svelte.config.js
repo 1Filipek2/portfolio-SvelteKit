@@ -1,13 +1,14 @@
-// filepath: /home/filiprybakov/Documents/DEV/finale/svelte.config.js
-import adapter from '@sveltejs/adapter-static';
+import adapterStatic from '@sveltejs/adapter-static';
 
-const config = {
+export default {
   kit: {
-    adapter: adapter(),
+    adapter: adapterStatic({
+      pages: 'docs',
+      assets: 'docs',
+      fallback: null
+    }),
     paths: {
       base: '',
     }
   }
 };
-
-export default config;

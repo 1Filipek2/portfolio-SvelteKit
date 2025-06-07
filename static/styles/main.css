@@ -37,40 +37,34 @@ body::before {
   opacity: 0.55;
 }
 
-.bg-anim-1, .bg-anim-2, .bg-anim-3 {
+.bg-blob {
   position: fixed;
-  inset: 0;
+  top: 55%;
+  left: 50%;
+  width: 55vw;
+  height: 55vw;
+  max-width: 600px;
+  max-height: 600px;
+  background: radial-gradient(circle at 60% 40%, #bfa074 0%, #4e5a7e 80%, transparent 100%);
+  filter: blur(60px);
+  opacity: 0.48;
+  transform: translate(-50%, -50%) scale(1);
   z-index: 0;
+  animation: blob-breathe 8s ease-in-out infinite, blob-move 18s ease-in-out infinite;
   pointer-events: none;
-  filter: blur(48px);
-  opacity: 0.55;
-  will-change: transform;
 }
 
-.bg-anim-1 {
-  background: radial-gradient(ellipse 40% 25% at 20% 30%, #bfa07488 0%, transparent 80%);
-  animation: move1 18s ease-in-out infinite alternate;
-}
-.bg-anim-2 {
-  background: radial-gradient(ellipse 30% 20% at 80% 70%, #38bdf855 0%, transparent 80%);
-  animation: move2 22s ease-in-out infinite alternate;
-}
-.bg-anim-3 {
-  background: radial-gradient(ellipse 25% 15% at 60% 10%, #74788288 0%, transparent 80%);
-  animation: move3 26s ease-in-out infinite alternate;
+@keyframes blob-breathe {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.10); }
 }
 
-@keyframes move1 {
-  0% { transform: translate(0, 0) scale(1); }
-  100% { transform: translate(30px, 40px) scale(1.08); }
-}
-@keyframes move2 {
-  0% { transform: translate(0, 0) scale(1); }
-  100% { transform: translate(-40px, -30px) scale(1.05); }
-}
-@keyframes move3 {
-  0% { transform: translate(0, 0) scale(1); }
-  100% { transform: translate(20px, -20px) scale(1.12); }
+@keyframes blob-move {
+  0%, 100% { top: 55%; left: 50%; }
+  20% { top: 53%; left: 53%; }
+  40% { top: 57%; left: 47%; }
+  60% { top: 59%; left: 51%; }
+  80% { top: 51%; left: 49%; }
 }
 
 #black-overlay {

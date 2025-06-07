@@ -46,9 +46,8 @@
   }
 </script>
 
-<div class="bg-anim-1"></div>
-<div class="bg-anim-2"></div>
-<div class="bg-anim-3"></div>
+<div class="bg-blob"></div>
+
 <div
   id="black-overlay"
   style="opacity: {fadeIn
@@ -172,7 +171,7 @@
       </a>
     </div>
   </section>
-  <footer>Made with SvelteKit, Filip Rybakov &copy; 2025.</footer>
+  <footer>Made with SvelteKit, Filip Rybakov &copy; 2025</footer>
 </div>
 
 <style src="/styles/main.css"></style>
