@@ -164,9 +164,11 @@ h2 {
 }
 
 .skill-title {
+  background: none;
+  border: none;
+  color: var(--accent-light);
   font-size: 1.15rem;
   font-weight: bold;
-  color: var(--accent-light);
   cursor: pointer;
   border-bottom: 1px solid var(--accent);
   padding-bottom: 0.3rem;
@@ -175,6 +177,8 @@ h2 {
   width: 40%;
   min-width: 170px;
   margin-bottom: 0.5rem;
+  text-align: left;
+  outline: none;
 }
 
 .skill-title.open {

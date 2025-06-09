@@ -76,13 +76,14 @@
     <div class="skills-list">
       {#each skillTitles as title, i}
         <div class="skill">
-          <div
+          <button
+            type="button"
             class="skill-title"
             class:open={skillsOpen[i]}
             on:click={() => toggleSkill(i)}
           >
             &gt; {title[lang]}
-          </div>
+          </button>
           <div
             class="skill-desc"
             class:show={skillsOpen[i]}
