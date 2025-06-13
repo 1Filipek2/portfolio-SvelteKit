@@ -224,6 +224,30 @@ h2 {
   text-align: left;
 }
 
+.references-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.reference-link {
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.08rem;
+}
+
+.reference-link:hover {
+  text-decoration: underline;
+}
+
+.references-more {
+  color: #888;
+  font-size: 1rem;
+  font-style: italic;
+}
+
 .references-coming-soon {
   color: #888;
   font-size: 1.1rem;
@@ -309,7 +333,6 @@ footer {
   width: 100%;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .container {
     margin-top: 3.5rem;

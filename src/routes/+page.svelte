@@ -95,7 +95,15 @@
       {/each}
     </div>
     <h2 class="references-title">References</h2>
-    <div class="references-coming-soon">Coming soon...</div>
+    <div class="references-list">
+      <a
+        href="https://buildingbau.eu/"
+        target="_blank"
+        rel="noopener"
+        class="reference-link">BuildingBau</a
+      >
+      <div class="references-more">More coming soon...</div>
+    </div>
     <div class="contact-links">
       <a href="mailto:rybakovfilip12@gmail.com" target="_blank" title="Gmail">
         <svg
